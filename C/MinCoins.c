@@ -34,7 +34,7 @@ void bubbleSort(int coins[], int arrSize) {
     for(int i = 0; i < arrSize-1; i++) {
         for(int j = i+1; j < arrSize; j++) {
 
-            if(j > i) {
+            if(coins[j] > coins[i]) {
                 int tmp = coins[i];
                 coins[i] = coins[j];
                 coins[j] = tmp;
